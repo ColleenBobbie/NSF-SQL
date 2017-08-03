@@ -1,18 +1,26 @@
-# Querying the National Science Foundation database using SQL
-This repository contains source code for a data exploration project which explored various aspects of the National Science Foundation database.
+# Querying the National Science Foundation database
+This repository contains source code for a data exploration project exploring various aspects of the National Science Foundation database.
 
-## Dataset
+## Database
+The National Science Foundation Grants database houses the information on recent research grants awarded to professors at research universities by the National Science Foundation. The database consists of six entites:
+ * Grants, with their associated meta-data (amount of funding, start/end dates, etc.)
+ * Organizations (universities) which recieve grants
+ * Researchers who recieve grants
+ * Programs run by the NSF that award grants
+ * Managers at NSF who run programs that award grants
+ * Fields (research areas) that describe high level topic-areas for grants
+
+The ERD for this database is as follows:<br />
+![alt text](https://github.com/ColleenBobbie/NSF-dB/blob/master/ERDdB.PNG)
+
 The data for this project can be found here:<br />
 https://www.nsf.gov/awardsearch/<br />
 
-Ideas for queries can be found here, although the queries in this repository have been adapted:<br />
+These repository queries were adapted from below:<br />
 http://db.csail.mit.edu/6.830/assignments/ps1.pdf<br />
 
-The ERD for this database is as follows:<br />
-
-
 ## Skills
-This analysis relies heavily on advanced SQL commands.
+This analysis relies heavily on advanced SQL commands including SELECT, WHERE, GROUP BY, ORDER BY, NESTING, and CREATE LOCAL TEMP FILE.
 
 ## Analysis
 Queries on this dataset include:
