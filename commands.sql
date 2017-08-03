@@ -1,3 +1,5 @@
+-*- mode: sql;-*-
+
 #---
 #create tables
 #---
@@ -106,7 +108,7 @@ GROUP BY o.name, f1.c;
 
 
 #Find the researchers that have received grants from 8 or more directorates. 
-#Retrieve the researcher's name and the number of directorates he/she has received grants from. 
+#Retrieve the researcher name and the number of directorates he/she has received grants from. 
 #Order the results in descending order by the number of directorates, and return the first 10.
 
 SELECT r.name, count(distinct(p.directorate)) as c
@@ -150,3 +152,4 @@ WHERE gtmp2.pi not in (SELECT pi FROM gtmp as g2
 WHERE g2.year = gtmp2.year + 1) and
 r.id = gtmp2.pi
 GROUP BY name;
+
